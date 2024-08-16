@@ -3,9 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saludar</title>
+  <title>Saludador</title>
 </head>
 <body>
-  <span>Hola!!!</span>
+  <form id="saludar-form">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" />
+
+    <input type="submit" value="Saludar" id="saludar-button" />
+  </form>
+  <div id="saludo-div"></div>
+
+  <script src="./src/presenter.js"></script>
 </body>
 </html>
