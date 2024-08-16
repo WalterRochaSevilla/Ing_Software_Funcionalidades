@@ -8,12 +8,20 @@
 <body>
   <form id="saludar-form">
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" />
+    <input  
+ type="text" id="nombre" />
+    <label for="genero">Género:</label>
+    <select name="genero" id="genero">
+      <option value="hombre">Hombre</option>
+      <option value="mujer">Mujer</option>
+      <option value="otro">Otro</option>  
+
+    </select>  
 
     <input type="submit" value="Saludar" id="saludar-button" />
   </form>
   <div id="saludo-div"></div>
 
-  <script src="./src/presenter.js"></script>
+  <script type="module" src="./src/presenter.js"></script>
 </body>
-</html>
+</html> 
