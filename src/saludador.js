@@ -3,14 +3,10 @@ function saludar(genero, edad) {
   let complemento = ''; // Almacena 'Señor', 'Señora', etc.
   if (genero === "hombre") {
       resp = 'Bienvenido';
-      complemento = (edad >= 30) ? 'Señor' : 'joven';
+      complemento = (edad >= 30) ? 'Señor' : 'Joven';
   } else if (genero === "mujer") {
       resp = 'Bienvenida';
-      if (edad >= 30) {
-          complemento = 'Señora';
-      } else {
-          complemento = 'Señorita';
-      }
+      complemento = (edad >= 30) ? 'Señora' : 'Señorita';
   } else {
       resp = 'Bienvenidx';
       complemento = 'Camarada';
